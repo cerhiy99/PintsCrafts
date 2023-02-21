@@ -1,8 +1,105 @@
 body{
     margin: 0;
 }
-.header__main{
-    background-color: rgb(255,160,122,0);
-    position: fixed;
+.header__main{   
+    width: 90%;
+    margin: auto;
     height: 100px;
+    z-index: 2;
+}
+.where__to{
+    color: #ffc123;
+}
+.where__to__try__text{
+    font-size: 13px;
+    background-color: black;
+    display: table;
+    height: 30px;
+    width: 130px;
+    z-index: 2;
+}
+.where__to__try__main{
+    cursor: pointer;
+    width: 150px;
+}
+.where__to__try__text__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 13px;
+    height: 100%;
+    align-items:center;
+}
+.try{
+    animation: blink 1s infinite;
+    color: white;
+}
+.where__to__try__address{
+    background-color: black;
+    width: 130px;
+    opacity: 0;
+    font-size: 13px;
+    transform: translateY(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+    color: white;
+}
+.where__to__try__address.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.where__to__try__address div{
+    height: 20px;
+    text-align: center;
+}
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+.triangle {
+    width: 6px;
+    height: 5px;
+    border-top: 30px solid black; /* встановлюємо товщину трикутника */
+    border-left: 62.5px solid transparent; /* робимо ліву грань прозорою */
+    border-right: 62.5px solid transparent; /* робимо праву грань прозорою */
+}
+.header__content{
+    display: grid;
+    grid-template-columns: 18% 75% 7%;
+}
+.list__page{
+    display: flex;
+    font-family:Georgia, 'Times New Roman', Times, serif, sans-serif;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.list__page div{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.active{
+    color:#ffc123;
+}
+.list__page{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+
+}
+.logo img{
+    width: 80px;
+}
+.burger{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-end;
 }
