@@ -6,19 +6,19 @@ const ListPage = () => {
     const navigate=useNavigate();
   return (
     <div className="list__page">
-        <div className="home">
+        <div className="home none">
             <NavLink to="/">ГОЛОВНА</NavLink>
         </div>
-        <div className="about__us">
+        <div className="about__us none">
             <NavLink to="/aboutUs">ПРО НАС</NavLink>
         </div>
         <div className="logo" onClick={()=>navigate("/")}>
             <img src='/imgs/logo-beer-img-light.png'/>
         </div>
-        <div className="menu">
+        <div className="menu none">
             <NavLink to="/menu">МЕНЮ</NavLink>
         </div>
-        <div className="TEAM">
+        <div className="TEAM none">
             <NavLink to="/team">КОМАНДА</NavLink>
         </div>
     </div>

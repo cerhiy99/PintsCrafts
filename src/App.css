@@ -1,8 +1,16 @@
 body{
     margin: 0;
 }
+@media screen and (min-width:1024px) {
+    .header__main{   
+        width: 90%;
+    }
+    .header__content{
+        display: grid;
+        grid-template-columns: 18% 75% 7%;
+    }
+}
 .header__main{   
-    width: 90%;
     margin: auto;
     height: 100px;
     z-index: 2;
@@ -69,6 +77,7 @@ body{
     border-left: 62.5px solid transparent; /* робимо ліву грань прозорою */
     border-right: 62.5px solid transparent; /* робимо праву грань прозорою */
 }
+
 .header__content{
     display: grid;
     grid-template-columns: 18% 75% 7%;
@@ -91,8 +100,14 @@ a{
 }
 .list__page{
     display: grid;
+}
+.list__page{
     grid-template-columns: auto auto auto auto auto;
-
+}   
+@media screen and (min-width:720px) and (max-width:1024px) {
+    .header__content{
+        grid-template-columns: 18% 75% 7%;
+    }
 }
 .logo img{
     width: 80px;
@@ -102,4 +117,49 @@ a{
     height: 80px;
     align-items: center;
     justify-content: flex-end;
+}
+.burger__content{
+    cursor: pointer;
+}
+.burger__main__content{
+    position: fixed;
+    height: 100%;
+    width: 30%;
+    left: 70%;
+    z-index: 50;
+    background-color: rgba(0,0,0,0.91);
+}
+@media screen and (min-width:1500px) {
+    .list__page{
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:720px) {
+    .none{
+        display: none;
+    }   
+}
+@media screen and (max-width:720px) {
+    .burger{
+        display: flex;
+        justify-content: right;
+    }
+}
+@media screen and (min-width:720px) {
+    .burger{
+        display: none;
+    }
+}
+a{
+    color: black;
+    font-weight:700;
+}
+@media screen and (max-width:720px) {
+    .header__content{
+        width: 98%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
 }
