@@ -5,23 +5,25 @@ import { NavLink } from 'react-router-dom';
 const ListPage = () => {
     const navigate=useNavigate();
   return (
-    <div className="list__page">
-        <div className="home none">
-            <NavLink to="/">ГОЛОВНА</NavLink>
-        </div>
-        <div className="about__us none">
-            <NavLink to="/aboutUs">ПРО НАС</NavLink>
+    <>
+        <div className="list__page">
+            <div className="home none">
+                <NavLink to="/">ГОЛОВНА</NavLink>
+            </div>
+            <div className="about__us none">
+                <NavLink to="/aboutUs">ПРО НАС</NavLink>
+            </div>
+            <div className="menu none">
+                <NavLink to="/menu">МЕНЮ</NavLink>
+            </div>
+            <div className="TEAM none">
+                <NavLink to="/team">КОМАНДА</NavLink>
+            </div>
         </div>
         <div className="logo" onClick={()=>navigate("/")}>
             <img src='/imgs/logo-beer-img-light.png'/>
         </div>
-        <div className="menu none">
-            <NavLink to="/menu">МЕНЮ</NavLink>
-        </div>
-        <div className="TEAM none">
-            <NavLink to="/team">КОМАНДА</NavLink>
-        </div>
-    </div>
+    </>
   )
 }
 

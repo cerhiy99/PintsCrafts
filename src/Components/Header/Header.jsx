@@ -7,9 +7,9 @@ const Header = () => {
   return (
     <div className="header__main">
         <div className="header__content">
-            <WhereToTry/>
-            <ListPage/>
-            <Burger/>
+          <WhereToTry/>
+          <ListPage/>
+          <Burger/>
         </div>
     </div>
   )

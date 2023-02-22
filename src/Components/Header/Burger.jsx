@@ -11,7 +11,7 @@ const Burger = () => {
             <IconButton onClick={() => setOpen(true)}>
                 <Menu />
             </IconButton>
-            <Drawer anchor="right" open={open} onClose={() => setOpen(false)}>
+            <Drawer anchor="right" open={open} onClick={() => setOpen(false)}>
                 <List onClick={()=>setOpen(false)} style={{"color":"white","height":"100%","opcity":"0.5","backgroundColor":"rgba(0,0,0,0.91)"}}>
                     <ListItem button>
                         <ListItemText onClick={()=>navigate("/")} primary="головна" />
