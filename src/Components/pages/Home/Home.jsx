@@ -1,6 +1,7 @@
 import React from "react";
 import BeerFlavors from "./BeerFlavors";
 import CraftedToInspire from "./CraftedToInspire";
+import HomeImgs from "./HomeImgs";
 import SwiperList from "./SwiperList";
 
 
@@ -11,6 +12,7 @@ const Home = () => {
       <SwiperList/>
       <CraftedToInspire/>
       <BeerFlavors/>
+      <HomeImgs/>
     </div>
   )
 }

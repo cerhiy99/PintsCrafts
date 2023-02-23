@@ -318,7 +318,7 @@ a{
 }
 @media screen and (min-width:1024px) {
     .crafted__to__inspire__content{
-        width: 90%;
+        width: 80%;
         margin: 50px auto 50px auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -330,21 +330,25 @@ a{
         justify-content: center;
     }
     .beer__flavors__main{
-        width: 90%;
+        width: 80%;
         margin: 50px auto 50px auto;
+    }
+    .home__imgs__main{
+        width: 80%;
+        margin: 100px auto 50px auto;
     }
 }
 @media screen and (max-width:1024px) {
     .crafted__to__inspire__content{
         display: flex;
         flex-direction: column;
-        width: 98%;
+        width: 90%;
         margin: auto;
     }
     .beer__flavors__main{
         display: flex;
         flex-direction: column;
-        width: 98%;
+        width: 90%;
         margin: auto;
     }
     .crafted__to__inspire__content{
@@ -354,6 +358,16 @@ a{
         margin-top: 30px;
         width: 100%;   
     }
+    .home__imgs__main{
+        width: 90%;
+        margin: 80px auto 50px auto;
+    }
+}
+.beer__flavors__main{
+    background-image: url("/public/imgs/Main-pricing-background.jpg") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
 .crafted__title{
     line-height: 45px;
@@ -394,4 +408,31 @@ a{
 .one__flavors__price{
     font-size: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+@media screen and (min-width:720px) {
+    .home__imgs__content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 4fr 2fr;
+        align-items: center;
+        column-gap: 3rem;;
+    }
+}
+@media screen and (max-width:720px) {
+    .home__imgs__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home__imgs1{
+        max-width: 400px;
+    }
+    .home__imgs2{
+        max-width: 400px;
+        margin: 50px 0 50px 0;
+    }
+}
+.home__imgs__content img{
+    width: 100%;
 }

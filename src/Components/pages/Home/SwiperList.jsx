@@ -4,16 +4,16 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const SwiperList = () => {
   return (
     <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y ]}
+        modules={[ Pagination, Scrollbar, A11y ]}
         spaceBetween={0}
         slidesPerView={1}
-        navigation
+        autoplay={true}
+        speed={10}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
         >
@@ -43,7 +43,7 @@ const SwiperList = () => {
               <img src="/imgs/main-home-slider-10.jpg"/>
             </div>
             <div className="text__on__media">
-              Почніть розважатися зараз, спробуйте наше крафтове пиво
+              спробуйте нові аромати. насолоджуйтесь унікальним смаком
             </div>
           </div>
         </SwiperSlide>
