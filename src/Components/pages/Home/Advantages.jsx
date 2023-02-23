@@ -13,7 +13,7 @@ const Advantages = () => {
     <div className="home__advantages__main">
         <div className="home__advantages__content">
             {listAdvantages.map((x,idx)=>
-                <div className="home__advantage">
+                <div key={idx} className="home__advantage">
                     <div className="home__atvantage__img">
                         <img src={'/imgs/main-home-icon-'+(idx+1)+".png"}/>
                     </div>
