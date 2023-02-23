@@ -1,4 +1,5 @@
 import React from "react";
+import Advantages from "./Advantages";
 import BeerFlavors from "./BeerFlavors";
 import CraftedToInspire from "./CraftedToInspire";
 import HomeImgs from "./HomeImgs";
@@ -13,6 +14,7 @@ const Home = () => {
       <CraftedToInspire/>
       <BeerFlavors/>
       <HomeImgs/>
+      <Advantages/>
     </div>
   )
 }

@@ -13,7 +13,7 @@ const SwiperList = () => {
         spaceBetween={0}
         slidesPerView={1}
         autoplay={true}
-        speed={10}
+        speed={5}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
         >
