@@ -1,4 +1,5 @@
 import React from "react";
+import BeerFlavors from "./BeerFlavors";
 import CraftedToInspire from "./CraftedToInspire";
 import SwiperList from "./SwiperList";
 
@@ -9,6 +10,7 @@ const Home = () => {
     <div className="home__main">
       <SwiperList/>
       <CraftedToInspire/>
+      <BeerFlavors/>
     </div>
   )
 }
