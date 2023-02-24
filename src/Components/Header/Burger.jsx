@@ -9,15 +9,12 @@ const Burger = () => {
     return (
         <div className='burger'>
             <IconButton onClick={() => setOpen(true)}>
-                <Menu />
+                <Menu color='#FC0'/>
             </IconButton>
             <Drawer anchor="right" open={open} onClick={() => setOpen(false)}>
                 <List onClick={()=>setOpen(false)} style={{"color":"white","height":"100%","opcity":"0.5","backgroundColor":"rgba(0,0,0,0.91)"}}>
                     <ListItem button>
                         <ListItemText onClick={()=>navigate("/")} primary="головна" />
-                    </ListItem>
-                    <ListItem onClick={()=>navigate("/aboutUs")} button>
-                        <ListItemText primary="про нас" />
                     </ListItem>
                     <ListItem onClick={()=>navigate("/menu")} button>
                         <ListItemText primary="меню" />

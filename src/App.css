@@ -103,7 +103,8 @@ a{
 .list__page{
     display: grid;
     height: 70px;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
 }   
 @media screen and (min-width:720px) and (max-width:1024px) {
     .header__content{
@@ -160,7 +161,7 @@ a{
     }
 }
 a{
-    color: white;
+    color:rgb(78, 196, 196);
     font-weight:700;
 }
 @media screen and (max-width:720px) {
@@ -556,5 +557,84 @@ a{
 @media screen and (max-width:720px) {
     .footer__block{
         width: 100%;
+    }
+}
+.footer__info{
+    margin-bottom: 30px;
+}
+.teem__title{
+    width: 100%;
+    height: 300px;
+    background-image: url("/public/imgs/Default-title-area-img.jpg");
+}
+.MuiSvgIcon-root{
+    color: #FC0;
+}
+.teem__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.list__teem{
+    margin-top: 100px;
+}
+@media screen and (min-width:1024px) {
+    .team__member{
+        width: 30%;
+    }
+    .list__teem{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:1024px) {
+    .list__teem{
+        width: 90%;
+        margin: auto;
+    }
+}
+@media screen and (min-width:720px) and (max-width:1024px) {
+    .team__member{
+        width: 48%;
+    }
+}
+.list__teem{
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.teem__member__img img{
+    margin-top: 80px;
+    width: 100%;
+}
+.name__member__team{
+    margin-top: 20px;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.description__team__member{
+    font-size: 18px;
+    margin-top: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.newsletter__description2{
+    display: flex;
+    align-items: center;
+}
+.icon__send{
+    display: flex;
+    align-items: center;
+    background-color: #FC0;
+    height: 43px;
+    z-index: 3;
+}
+@media screen and (min-width:1024px){
+    .main__beer__Flavors{
+        margin-top: -50px;       
     }
 }

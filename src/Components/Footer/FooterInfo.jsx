@@ -12,14 +12,11 @@ const FooterInfo = () => {
                 <div className="home">
                     <NavLink to="/">ГОЛОВНА</NavLink>
                 </div>
-                <div className="about__us">
-                    <NavLink to="/aboutUs">ПРО НАС</NavLink>
-                </div>
                 <div className="menu">
                     <NavLink to="/menu">МЕНЮ</NavLink>
                 </div>
                 <div className="TEAM">
-                    <NavLink to="/team">КОМАНДА</NavLink>
+                    <NavLink to="/teem">КОМАНДА</NavLink>
                 </div>
             </div>
         </div>

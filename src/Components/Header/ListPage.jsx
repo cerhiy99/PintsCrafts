@@ -10,14 +10,11 @@ const ListPage = () => {
             <div className="home none">
                 <NavLink to="/">ГОЛОВНА</NavLink>
             </div>
-            <div className="about__us none">
-                <NavLink to="/aboutUs">ПРО НАС</NavLink>
-            </div>
             <div className="menu none">
                 <NavLink to="/menu">МЕНЮ</NavLink>
             </div>
             <div className="TEAM none">
-                <NavLink to="/team">КОМАНДА</NavLink>
+                <NavLink to="/teem">КОМАНДА</NavLink>
             </div>
         </div>
         <div className="logo" onClick={()=>navigate("/")}>

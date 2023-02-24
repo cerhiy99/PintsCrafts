@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import WhereToTry from './WhereToTry';
 import ListPage from './ListPage';
 import Burger from './Burger';

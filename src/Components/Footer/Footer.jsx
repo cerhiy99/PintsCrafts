@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
 import FooterInfo from './FooterInfo';
 import Location from './Location';
 import Newsletter from './Newsletter';
