@@ -638,3 +638,11 @@ a{
         margin-top: -50px;       
     }
 }
+.where__to__try__text__container{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.where__to__try__address{
+    font-size: 17px;
+}
